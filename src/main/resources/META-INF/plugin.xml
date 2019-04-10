@@ -11,7 +11,7 @@
 </p>
         ]]>
     </description>
-    <version>5.26.0</version>
+    <version>5.26.0-zcamp-1</version>
     <idea-version since-build="171.4694.73"/>
     <vendor url="https://infernus.org/" email="jamie@infernus.org">Jamie Shiell</vendor>
 
@@ -20,6 +20,7 @@
     <change-notes>
         <![CDATA[
 <ul>
+    <li>5.26.0-zcamp-1: New: Added Feature Scan Package(s) Files.</li>
     <li>5.26.0: New: Now built against IDEA 2017.1.6 (was 2016.1).</li>
     <li>5.25.0: New: Added Checkstyle 8.17, 8.18 (#438).</li>
     <li>5.24.3: Fixed: Blatant white areas in the panel when Darcula in use - thanks to @embee1981 (#432).</li>
@@ -240,6 +241,16 @@
                     icon="/actions/execute.png">
 
                 <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            </action>
+
+
+            <action id="CheckStylePackageFilesAction"
+                    class="org.infernus.idea.checkstyle.actions.ScanPackage"
+                    text="Check Package(s) Files"
+                    description="Run Checkstyle on files off the selected package(s)."
+                    icon="/nodes/package.png">
+
+                <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
             </action>
 
             <action id="CheckStyleModuleFilesAction"

@@ -7,7 +7,7 @@ import org.infernus.idea.checkstyle.build.GatherCheckstyleArtifactsTask
 
 buildscript {
     repositories {
-        maven { url 'http://dl.bintray.com/jetbrains/intellij-plugin-service' }
+        maven { url'http://maven.aliyun.com/nexus/content/groups/public/'}
     }
 }
 plugins {
@@ -24,7 +24,7 @@ repositories {
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-version = '5.26.0'
+version = '5.26.0-zcamp-1'
 
 intellij {
     version = 'IC-2017.1.6';
